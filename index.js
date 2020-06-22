@@ -1,6 +1,6 @@
 const error = (message, status) => {
     let error_type;
-    if (status >= 40 && status < 500) {
+    if (status >= 400 && status < 500) {
         error_type = "Client Error.";
     } else if(status >= 500 && status < 600){
         error_type = " Server Error.";
