@@ -1,0 +1,9 @@
+{
+  "name": "error-handler-e2",
+  "version": "1.1.0",
+  "description": "This is handle error package",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Milad E. Fahmy",
+  "license": "ISC"
+}
