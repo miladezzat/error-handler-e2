@@ -3,7 +3,9 @@
   "version": "2.0.0",
   "description": "This is handle error package",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "mocha"
+  },
   "author": "Milad E. Fahmy",
   "license": "ISC",
   "repository": {
@@ -20,5 +22,8 @@
     "error-handler",
     "expressjs",
     "nodejs"
-  ]
+  ],
+  "dependencies": {
+    "mocha": "^8.0.1"
+  }
 }
