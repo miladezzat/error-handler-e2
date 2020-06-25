@@ -1,7 +1,7 @@
 const spec_errors = [
     {
         statusCode: 400,
-        message: "Bad Request",
+        message: "400 Bad Request",
         description: `
         The request could not be understood by the server due to malformed syntax. 
         The client SHOULD NOT repeat the request without modifications.
@@ -14,7 +14,7 @@ const spec_errors = [
     },
     {
         statusCode: 401,
-        message: "Unauthorized",
+        message: "401 Unauthorized",
         description: `
         The request requires user authentication. The response MUST include a 
         WWW-Authenticate header field (section 14.47) containing a challenge 
@@ -40,7 +40,7 @@ const spec_errors = [
     },
     {
         statusCode: 402,
-        message: "Payment Required",
+        message: "402 Payment Required",
         description: `
         This code is reserved for future use.
 
@@ -55,7 +55,7 @@ const spec_errors = [
     },
     {
         statusCode: 403,
-        message: "Forbidden",
+        message: "403 Forbidden",
         description: `
         The server understood the request, but is refusing to fulfill it. 
         Authorization will not help and the request SHOULD NOT be repeated. 
@@ -76,7 +76,7 @@ const spec_errors = [
     },
     {
         statusCode: 404,
-        message: "Not Found",
+        message: "404 Not Found",
         description: `
         The server has not found anything matching the Request-URI. 
         No indication is given of whether the condition is temporary or 
@@ -97,7 +97,7 @@ const spec_errors = [
     },
     {
         statusCode: 405,
-        message: "Method Not Allowed",
+        message: "405 Method Not Allowed",
         description: `
         The method specified in the Request-Line is not allowed for 
         the resource identified by the Request-URI. The response MUST include 
@@ -112,7 +112,7 @@ const spec_errors = [
     },
     {
         statusCode: 406,
-        message: 'Not Acceptable',
+        message: '406 Not Acceptable',
         description: `
         The resource identified by the request is only capable of generating 
         response entities which have content characteristics not acceptable 
@@ -143,7 +143,7 @@ const spec_errors = [
     },
     {
         statusCode: 407,
-        message: 'Proxy Authentication Required',
+        message: '407 Proxy Authentication Required',
         description: `
         This code is similar to 401 (Unauthorized), but indicates that 
         the client must first authenticate itself with the proxy. 
@@ -159,7 +159,7 @@ const spec_errors = [
     },
     {
         statusCode: 408,
-        message: 'Request Timeout',
+        message: '408 Request Timeout',
         description: `
         The client did not produce a request within the time that the server 
         was prepared to wait. The client MAY repeat the request without 
@@ -174,7 +174,7 @@ const spec_errors = [
     },
     {
         statusCode: 409,
-        message: `Conflict`,
+        message: `409 Conflict`,
         description: `
         The request could not be completed due to a conflict with the current 
         state of the resource. This code is only allowed in situations where 
@@ -202,7 +202,7 @@ const spec_errors = [
     },
     {
         statusCode: 410,
-        message: `Gone`,
+        message: `410 Gone`,
         description: `
         The requested resource is no longer available at the server and 
         no forwarding address is known. This condition is expected to be 
@@ -234,7 +234,7 @@ const spec_errors = [
     },
     {
         statusCode: 411,
-        message: `Length Required`,
+        message: `411 Length Required`,
         description: `
         The server refuses to accept the request without a defined 
         Content-Length. The client MAY repeat the request if it adds a valid 
@@ -248,7 +248,7 @@ const spec_errors = [
     },
     {
         statusCode: 412,
-        message: `Precondition Failed`,
+        message: `412 Precondition Failed`,
         description: `
         The precondition given in one or more of the request-header 
         fields evaluated to false when it was tested on the server. 

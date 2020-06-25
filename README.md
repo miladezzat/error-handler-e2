@@ -11,7 +11,7 @@ You need download package in your project and import any function you need
 ```
     npm install npm i error-handler-e2
     //or
-    yarn add npm i error-handler-e2
+    yarn add error-handler-e2
 
     const ErrorHandlerrE2 = require("error-handler-e2");
     //or
@@ -19,13 +19,33 @@ You need download package in your project and import any function you need
 ```
 
 ## Examples
-* Using Functions
- * create custom error
+### Using Functions
+
+1. create custom error
 ```
-    const { functions } = require("error-handler-e2");
-    const myError =vfunction.customError({message: "Testing Error Message", 
-    statusCode: 404, {...options}});
-    
+    const { customError } = require("error-handler-e2").functions; 
+
+    const myError = customError({
+        message: "testing erro",
+        statusCode: 404,
+    });
+
+```
+2. Logging Errors
+```
+    const { customError, logErrors } = require("error-handler-e2").functions; 
+
+    const myError = customError({
+        message: "testing erro",
+        statusCode: 404,
+    });
+
+    logErrors({
+        error: err,
+        file: "index.js",
+        path: `${__dirname}/${__filename}`,
+    });
+
 ```
 
 
