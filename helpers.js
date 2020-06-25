@@ -21,8 +21,32 @@ const getColor = (colorName) => {
         FgWhite: "\x1b[37m",
     }
     return colors[colorName];
+};
+
+class ApplicationError extends Error {
+    constructor({ message, statusCode, type, ...resetArgv }) {
+        super();
+        Error.captureStackTrace(this, this.constructor);
+        this.name = this.constructor.name;
+        this.type = type;
+        this.message = message;
+        this.statusCode = statusCode;
+        this.resetArgv = { ...resetArgv };
+    }
 }
+
+
+const printResetErrors = (restArgs) => {
+    let restErrors = Object.keys(restArgs)
+    for (let index = 0; index < restErrors.length; index++) {
+        const key = restErrors[index];
+        console.log(getColor("FgYellow"), `${key.toUpperCase()} => ${restArgs[key]}`);
+    }
+}
+
 
 module.exports = {
     getColor,
+    ApplicationError,
+    printResetErrors,
 }
