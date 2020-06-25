@@ -5,5 +5,20 @@
   "main": "index.js",
   "scripts": {},
   "author": "Milad E. Fahmy",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miladezzat/error-handler-e2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/miladezzat/error-handler-e2/issues"
+  },
+  "homepage": "https://github.com/miladezzat/error-handler-e2#readme",
+  "keywords": [
+    "Errors",
+    "error",
+    "error-handler",
+    "expressjs",
+    "nodejs"
+  ]
 }
