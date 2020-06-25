@@ -41,9 +41,6 @@ const customError = ({ message = "",
     return newError;
 };
 
-let err = customError({ message: "This is error testing", statusCode: 400 })
-logErrors({error: err, file:"dsfds",path:"sfsf"});
-
 module.exports = {
     logErrors,
     customError,
