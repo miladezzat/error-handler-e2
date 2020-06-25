@@ -1,6 +1,6 @@
 {
   "name": "error-handler-e2",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "This is handle error package",
   "main": "index.js",
   "scripts": {
