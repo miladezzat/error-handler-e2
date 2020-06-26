@@ -1,6 +1,6 @@
 {
   "name": "error-handler-e2",
-  "version": "2.3.7",
+  "version": "2.3.9",
   "description": "This is handle error package",
   "main": "index.js",
   "scripts": {
@@ -25,5 +25,12 @@
   ],
   "devDependencies": {
     "mocha": "^8.0.1"
-  }
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {}
 }
