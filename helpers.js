@@ -46,11 +46,10 @@ class CustomError extends ApplicationError {
     constructor({ message, error, ...resetArgv }) {
         super({ message, ...resetArgv });
         this.error_code = error.code;
-        this.type = error.name || '';
+        this.type = error.name || this.constructor.name;
         this.error_message = error.message
     }
 }
-
 
 const printResetErrors = (restArgs) => {
     let restErrors = Object.keys(restArgs)

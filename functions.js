@@ -11,7 +11,7 @@ const { getError, getErrorType } = require("./desc_errors");
  * @description this a function to custom log errors
  */
 const logErrors = ({ error, file, path, ...restArgs }) => {
-    let { type, statusCode, message, resetArgv, ...reset } = error;
+    let { type = "", statusCode, message, resetArgv, ...reset } = error;
 
     console.group(getColor("FgRed"), `Error: ${type.toUpperCase()}`)
     console.log(getColor("FgGreen"), "*** Start Logging Error ***\n");
@@ -31,16 +31,15 @@ const logErrors = ({ error, file, path, ...restArgs }) => {
     console.groupEnd();
 }
 
-const createHttpError = async ({ message = "",
+const createHttpError = ({ message = "",
     statusCode = "", ...resetArgv }) => {
 
     const error = getError(statusCode);
-
+    let type = getErrorType(statusCode);
     let errObj = {
         message: message,
         statusCode: statusCode,
-
-        type: getErrorType(statusCode),
+        type,
         ...resetArgv,
     }
     if (error) {
