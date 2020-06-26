@@ -46,7 +46,7 @@ class CustomError extends ApplicationError {
     constructor({ message, error, ...resetArgv }) {
         super({ message, ...resetArgv });
         this.error_code = error.code;
-        this.error_name = error.name;
+        this.type = error.name || '';
     }
 }
 
