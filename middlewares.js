@@ -1,10 +1,10 @@
 const handleHttpError = (err, req, res, next) => {
-    const resObj = {
+    let resObj = {
         message: err.message,
         type: err.type,
         req_method: req.method,
     };
-    if (process.NODE_ENV === "development") {
+    if (process.env.NODE_ENV === "development") {
         resObj = { ...resObj, ...err.resetArgv, };
     };
     
