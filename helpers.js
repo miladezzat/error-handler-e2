@@ -24,14 +24,29 @@ const getColor = (colorName) => {
 };
 
 class ApplicationError extends Error {
-    constructor({ message, statusCode, type, ...resetArgv }) {
+    constructor({ message, ...resetArgv }) {
         super();
         Error.captureStackTrace(this, this.constructor);
         this.name = this.constructor.name;
-        this.type = type;
         this.message = message;
-        this.statusCode = statusCode;
         this.resetArgv = { ...resetArgv };
+    }
+}
+
+class HttpError extends ApplicationError {
+    constructor({ message, statusCode, type, ...resetArgv }) {
+        super({ message, ...resetArgv });
+        this.statusCode = statusCode;
+        this.type = type;
+        this.error_name = error && error.name;
+    }
+}
+
+class CustomError extends ApplicationError {
+    constructor({ message, error, ...resetArgv }) {
+        super({ message, ...resetArgv });
+        this.error_code = error.code;
+        this.error_name = error.name;
     }
 }
 
@@ -47,6 +62,7 @@ const printResetErrors = (restArgs) => {
 
 module.exports = {
     getColor,
-    ApplicationError,
+    HttpError,
     printResetErrors,
+    CustomError,
 }

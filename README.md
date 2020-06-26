@@ -2,7 +2,9 @@
 [![Build Status](https://travis-ci.org/miladezzat/error-handler-e2.svg?branch=master)](https://travis-ci.org/miladezzat/error-handler-e2)
 [![npm version](https://badge.fury.io/js/error-handler-e2.svg)](https://badge.fury.io/js/error-handler-e2)&nbsp;
 
-This package will help you to handle errors, and logging errors with nice style for debugging
+This package will help you to handle errors, 
+and logging errors with nice style for debugging, and you can use handleHttpError 
+middleware
 
 ## Getting Start 
 You need download package in your project and import any function you need
@@ -23,30 +25,74 @@ You need download package in your project and import any function you need
 
 1. create custom error
 ```
-    const { customError } = require("error-handler-e2").functions; 
+    const { createCustomError } = require("error-handler-e2").functions; 
 
-    const myError = customError({
-        message: "testing erro",
-        statusCode: 404,
+    //params createCustomError({message: String, error: ErrorObj, [options]})
+    const myError = createCustomError({
+      message = "Testing Error message", 
+      error = {},       
     });
 
 ```
-2. Logging Errors
+2. create Http Error
 ```
-    const { customError, logErrors } = require("error-handler-e2").functions; 
+    const { createHttpError } = require("error-handler-e2").functions;
 
-    const myError = customError({
-        message: "testing erro",
-        statusCode: 404,
+    //params createHttpError({message: String, statusCode: Number, [options]})
+    const httpError = createHttpError({
+         message = "This is message",
+        statusCode = 404,
+    })
+```
+3. Logging Errors
+```
+    const { createCustomError,createHttpError ,logErrors } 
+            = require("error-handler-e2").functions; 
+
+    //params createHttpError({message: String, statusCode: Number, [options]})
+    const httpError = createHttpError({
+         message = "This is message",
+        statusCode = 404,
+    })
+
+    //params createCustomError({message: String, error: ErrorObj, [options]})
+    const myError = createCustomError({
+      message = "Testing Error message", 
+      error = {},       
     });
 
     logErrors({
-        error: err,
+        error: httpError,
+        file: "index.js",
+        path: `${__dirname}/${__filename}`,
+    });
+    logErrors({
+        error: myError,
         file: "index.js",
         path: `${__dirname}/${__filename}`,
     });
 
 ```
+
+### Using Middlewares
+```
+    const { handleHttpError } = require('error-handler-e2).middlwares;
+    const { createHttpError } = require('error-handler-e2).functions;
+
+    //params createHttpError({message: String, statusCode: Number, [options]})
+    const httpError = createHttpError({
+         message = "This is message",
+        statusCode = 404,
+    });
+
+    //you need throw httpError, when catch error
+    throw httpError;
+
+    //after your routes, using handle error middleware
+    app.use(handleHttpError());
+
+```
+
 
 
 ## Authors 

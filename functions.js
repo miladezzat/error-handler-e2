@@ -1,4 +1,9 @@
-const { getColor, ApplicationError, printResetErrors } = require("./helpers");
+const {
+    getColor,
+    HttpError,
+    printResetErrors,
+    CustomError,
+} = require("./helpers");
 const { getError, getErrorType } = require("./desc_errors");
 /**
  * @author Milad E. Fahmy
@@ -26,11 +31,11 @@ const logErrors = ({ error, file, path, ...restArgs }) => {
     console.groupEnd();
 }
 
-const customError = ({ message = "",
+const createHttpError = ({ message = "",
     statusCode = "", ...resetArgv }) => {
     const error = getError(statusCode);
 
-    const newError = new ApplicationError({
+    const httpError = new HttpError({
         message: message,
         statusCode: statusCode,
         description: error && error.description,
@@ -38,10 +43,17 @@ const customError = ({ message = "",
         type: getErrorType(statusCode),
         ...resetArgv,
     });
-    return newError;
+    return httpError;
 };
+
+const createCustomError = ({ message = "", error = {}, ...restArgs }) => {
+    const customError = new CustomError({ message, error, ...restArgs });
+    return customError;
+};
+
 
 module.exports = {
     logErrors,
-    customError,
+    createHttpError,
+    createCustomError,
 }
