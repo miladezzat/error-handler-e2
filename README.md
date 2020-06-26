@@ -7,7 +7,8 @@ and logging errors with nice style for debugging, and you can use handleHttpErro
 middleware
 
 ## Sponsor This Project
-[support us](https://ko-fi.com/miladefahmy)
+you can [support us](https://ko-fi.com/miladefahmy) with a little, but this 
+become more for us.
 
 ## Getting Start 
 You need download package in your project and import any function you need
