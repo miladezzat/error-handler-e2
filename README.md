@@ -6,6 +6,9 @@ This package will help you to handle errors,
 and logging errors with nice style for debugging, and you can use handleHttpError 
 middleware
 
+## Sponsor This Project
+[support us](https://ko-fi.com/miladefahmy)
+
 ## Getting Start 
 You need download package in your project and import any function you need
 
