@@ -31,18 +31,23 @@ const logErrors = ({ error, file, path, ...restArgs }) => {
     console.groupEnd();
 }
 
-const createHttpError = ({ message = "",
+const createHttpError = async ({ message = "",
     statusCode = "", ...resetArgv }) => {
+
     const error = getError(statusCode);
 
-    const httpError = new HttpError({
+    let errObj = {
         message: message,
         statusCode: statusCode,
-        description: error && error.description,
-        err_message: error && error.message,
+
         type: getErrorType(statusCode),
         ...resetArgv,
-    });
+    }
+    if (error) {
+        errObj.description = error.description;
+        errObj.err_message = error.message;
+    }
+    const httpError = new HttpError(errObj);
     return httpError;
 };
 
@@ -50,7 +55,6 @@ const createCustomError = ({ message = "", error = {}, ...restArgs }) => {
     const customError = new CustomError({ message, error, ...restArgs });
     return customError;
 };
-
 
 module.exports = {
     logErrors,

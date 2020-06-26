@@ -34,7 +34,7 @@ class ApplicationError extends Error {
 }
 
 class HttpError extends ApplicationError {
-    constructor({ message, statusCode, type, ...resetArgv }) {
+    constructor({ message, statusCode, type, error, ...resetArgv }) {
         super({ message, ...resetArgv });
         this.statusCode = statusCode;
         this.type = type;
