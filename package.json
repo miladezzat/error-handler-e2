@@ -1,5 +1,5 @@
 {
-  "name": "error-handler-e2",
+  "name": "@miladezzat/error-handler-e2",
   "version": "2.5.0",
   "description": "This is handle error package",
   "main": "index.js",
@@ -9,6 +9,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "author": {
     "name": "Milad E. Fahmy",
     "email": "miladezzat.f@gmail.com",
