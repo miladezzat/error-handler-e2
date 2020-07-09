@@ -6,6 +6,9 @@
   "scripts": {
     "test": "mocha"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "author": {
     "name": "Milad E. Fahmy",
     "email": "miladezzat.f@gmail.com",
