@@ -7,6 +7,12 @@
     "test": "mocha"
   },
   "author": "Milad E. Fahmy",
+  "contributors": [
+    {
+      "name": "Milad E. Fahmy <miladezzat>",
+      "email": "miladezzat.f@gmail.com"
+    }
+  ],
   "license": "ISC",
   "repository": {
     "type": "git",
