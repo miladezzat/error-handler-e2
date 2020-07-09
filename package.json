@@ -6,7 +6,11 @@
   "scripts": {
     "test": "mocha"
   },
-  "author": "Milad E. Fahmy",
+  "author": {
+    "name": "Milad E. Fahmy",
+    "email": "miladezzat.f@gmail.com",
+    "url": "milad-ezzat.herokuapp.com/"
+  } ,
   "contributors": [
     {
       "name": "Milad E. Fahmy <miladezzat>",
