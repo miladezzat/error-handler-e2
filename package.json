@@ -35,8 +35,7 @@
   ],
   "devDependencies": {
     "mocha": "^8.0.1"
-  },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  },  
   "directories": {
     "test": "test"
   },
