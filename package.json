@@ -1,6 +1,6 @@
 {
   "name": "error-handler-e2",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "description": "This is handle error package",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "name": "Milad E. Fahmy",
     "email": "miladezzat.f@gmail.com",
     "url": "milad-ezzat.herokuapp.com/"
-  } ,
+  },
   "contributors": [
     {
       "name": "Milad E. Fahmy <miladezzat>",
@@ -35,7 +35,7 @@
   ],
   "devDependencies": {
     "mocha": "^8.0.1"
-  },  
+  },
   "directories": {
     "test": "test"
   },
