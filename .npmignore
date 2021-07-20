@@ -1,0 +1,6 @@
+test
+.husky
+.gethub
+node_modules
+.gitignore
+.travis.yml

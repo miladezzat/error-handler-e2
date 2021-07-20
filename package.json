@@ -1,26 +1,77 @@
 {
   "name": "@miladezzat/error-handler-e2",
-  "version": "2.5.0",
+  "version": "3.0.0",
   "description": "This is handle error package",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },  
-  "author": {
-    "name": "Milad E. Fahmy",
-    "email": "miladezzat.f@gmail.com",
-    "url": "milad-ezzat.herokuapp.com/"
-  },
-  "contributors": [
-    {
-      "name": "Milad E. Fahmy <miladezzat>",
-      "email": "miladezzat.f@gmail.com"
-    }
+  "main": "./build/index.js",
+  "module": "./build/index.js",
+  "files": [
+    "build"
   ],
-  "license": "ISC",
+  "types": "./build/index.d.ts",
+  "source": "./src/index.ts",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha -r ts-node/register test/**/*.spec.ts",
+    "depcheck": "./node_modules/.bin/npm-check",
+    "build": "rollup -c",
+    "git-cz": "./node_modules/.bin/git-cz",
+    "husky": "husky init",
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable",
+    "lint": "./node_modules/.bin/eslint",
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor",
+    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "errors",
+    "error",
+    "error handler",
+    "express js",
+    "node js"
+  ],
+  "author": "Milad E. Fahmy <miladezzat> (https://github.com/miladezzat)",
+  "contributors": [
+    "Milad E. Fahmy <miladezzat> (https://github.com/miladezzat)"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.2.0",
+    "@types/chai": "^4.2.15",
+    "@types/mocha": "^8.2.1",
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "chai": "^4.3.0",
+    "commitizen": "^4.2.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "generate-changelog": "^1.8.0",
+    "husky": "^5.1.1",
+    "mocha": "^8.3.0",
+    "npm-check": "^5.9.2",
+    "pinst": "^2.1.6",
+    "rollup": "^2.41.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test && npm run lint",
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/miladezzat/error-handler-e2.git"
@@ -28,19 +79,5 @@
   "bugs": {
     "url": "https://github.com/miladezzat/error-handler-e2/issues"
   },
-  "homepage": "https://github.com/miladezzat/error-handler-e2#readme",
-  "keywords": [
-    "Errors",
-    "error",
-    "error-handler",
-    "expressjs",
-    "nodejs"
-  ],
-  "devDependencies": {
-    "mocha": "^8.0.1"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {}
+  "homepage": "https://github.com/miladezzat/error-handler-e2#readme"
 }
