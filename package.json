@@ -3,12 +3,7 @@
   "version": "2.5.0",
   "description": "This is handle error package",
   "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },  
+  "scripts": {},
   "author": {
     "name": "Milad E. Fahmy",
     "email": "miladezzat.f@gmail.com",
@@ -20,27 +15,16 @@
       "email": "miladezzat.f@gmail.com"
     }
   ],
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/miladezzat/error-handler-e2.git"
-  },
-  "bugs": {
-    "url": "https://github.com/miladezzat/error-handler-e2/issues"
-  },
-  "homepage": "https://github.com/miladezzat/error-handler-e2#readme",
+  "license": "MIT",
   "keywords": [
-    "Errors",
+    "errors",
     "error",
-    "error-handler",
-    "expressjs",
-    "nodejs"
+    "error handler",
+    "express js",
+    "node js"
   ],
+  "dependencies": {},
   "devDependencies": {
     "mocha": "^8.0.1"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {}
+  }
 }
