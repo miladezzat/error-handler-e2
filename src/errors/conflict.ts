@@ -1,5 +1,5 @@
 import CustomError from './custom-error';
-import { CONFLICT } from '../status-codes'
+import { CONFLICT } from '../status-codes';
 import { returnSerializeError } from '../utils/custom-types';
 
 class Conflict extends CustomError {
