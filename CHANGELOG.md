@@ -1,3 +1,26 @@
+#### 3.0.1 (2021-07-22)
+
+##### Chores
+
+*  update package json ([afc6c6e3](https://github.com/miladezzat/error-handler-e2/commit/afc6c6e3ef5d822054a0fb75ab1e9eddcd1ea99f))
+
+##### Continuous Integration
+
+*  update ci ([aae1cad8](https://github.com/miladezzat/error-handler-e2/commit/aae1cad8c9681c470646566e8a2358e30eb25c33))
+*  update ci ([a7b39ec9](https://github.com/miladezzat/error-handler-e2/commit/a7b39ec966bca59d31ace0f59be4f01d3b7a2a3e))
+
+##### Documentation Changes
+
+*  update docs ([c84e4396](https://github.com/miladezzat/error-handler-e2/commit/c84e43961a3a0a20df7b91d71fef5013c8e8ffcf))
+
+##### Bug Fixes
+
+*  solve error in package json ([e18a5bdf](https://github.com/miladezzat/error-handler-e2/commit/e18a5bdfd7c85dba25368569038066924e6c2638))
+
+##### Refactors
+
+*  add some js docs and solve a bug ([ce5f9903](https://github.com/miladezzat/error-handler-e2/commit/ce5f9903dfe981d015d6a90707dd0b6967622105))
+
 ## 3.0.0 (2021-07-20)
 
 ##### Chores
