@@ -6,6 +6,6 @@ export default {
   output: {
     dir: './build',
     format: 'umd',
-    name: 'heap',
+    name: 'error-handler-e2',
   },
 };
