@@ -1,3 +1,21 @@
+#### 3.0.2 (2021-07-29)
+
+##### Chores
+
+*  update packagr json ([03dc48d4](https://github.com/miladezzat/error-handler-e2/commit/03dc48d48ebcbddb3ce51a8c2ad8927d9ec9365e))
+
+##### Continuous Integration
+
+*  update ic ([a6ed6b36](https://github.com/miladezzat/error-handler-e2/commit/a6ed6b36367837b7b8f01becb455b116166af924))
+
+##### Documentation Changes
+
+*  update docs ([d6fa9734](https://github.com/miladezzat/error-handler-e2/commit/d6fa97341c615888f52742bd363a16741bec8aff))
+
+##### Bug Fixes
+
+*  solve bug ([6a7f6688](https://github.com/miladezzat/error-handler-e2/commit/6a7f668873da21853e0448fa4b16ebb4ef0b19aa))
+
 #### 3.0.1 (2021-07-22)
 
 ##### Chores
