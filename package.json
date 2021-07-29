@@ -11,7 +11,7 @@
   "source": "./src/index.ts",
   "scripts": {
     "test": "./node_modules/.bin/mocha -r ts-node/register test/**/*.spec.ts",
-    "depcheck": "./node_modules/.bin/npm-check",
+    "depcheck": "./node_modules/.bin/npm-check -u",
     "build": "rollup -c",
     "git-cz": "./node_modules/.bin/git-cz",
     "husky": "husky init",
@@ -39,9 +39,9 @@
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.0",
     "@types/chai": "^4.2.15",
-    "@types/mocha": "^8.2.1",
-    "@typescript-eslint/eslint-plugin": "^4.15.2",
-    "@typescript-eslint/parser": "^4.15.2",
+    "@types/mocha": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
+    "@typescript-eslint/parser": "^4.28.5",
     "chai": "^4.3.0",
     "commitizen": "^4.2.3",
     "cz-conventional-changelog": "^3.3.0",
@@ -49,12 +49,12 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.22.1",
     "generate-changelog": "^1.8.0",
-    "husky": "^5.1.1",
-    "mocha": "^8.3.0",
+    "husky": "^7.0.1",
+    "mocha": "^9.0.3",
     "npm-check": "^5.9.2",
     "pinst": "^2.1.6",
-    "rollup": "^2.41.0",
-    "ts-node": "^9.1.1",
+    "rollup": "^2.55.0",
+    "ts-node": "^10.1.0",
     "typescript": "^4.1.5"
   },
   "husky": {
