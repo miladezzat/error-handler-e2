@@ -39,15 +39,6 @@ import { Errors } from 'error-handler-e2'
   * [UnAuthorizedError](#unauthorizederror)
   * [UnProcessableEntityError](#unprocessableentityerror)
 
-2. Http Status
-  * [NO_CONTENT 204](#no_content-204)
-  * [BAD_REQUEST 400](#bad_request-400)
-  * [UNAUTHENTICATED 401](#unauthenticated-401)
-  * [UNAUTHORIZED 403](#unauthorized-403)
-  * [NOT_FOUND 404](#not_found-404)
-  * [CONFLICT 409](#conflict-409)
-  * [UNPROCURABLE_ENTITY 422](#unprocurable_entity-422)
-  * [INTERNAL_SERVER_ERROR 500](#internal_server_error-500)
 ### BadRequestError
 ```js
 const { Errors:{ BadRequestError }} = require('error-handler-e2');
@@ -110,36 +101,46 @@ const { Errors:{ UnProcessableEntityError }} = require('error-handler-e2');
 throw new UnProcessableEntityError('UnProcessable Entity error message', { time: new Date() });
 ```
 
-## NO_CONTENT 204
+2. Http Status
+  * [NO_CONTENT 204](#no_content-204)
+  * [BAD_REQUEST 400](#bad_request-400)
+  * [UNAUTHENTICATED 401](#unauthenticated-401)
+  * [UNAUTHORIZED 403](#unauthorized-403)
+  * [NOT_FOUND 404](#not_found-404)
+  * [CONFLICT 409](#conflict-409)
+  * [UNPROCURABLE_ENTITY 422](#unprocurable_entity-422)
+  * [INTERNAL_SERVER_ERROR 500](#internal_server_error-500)
+
+### NO_CONTENT 204
 ```js
 const { StatusCodes: { NO_CONTENT } } = require('error-handler-e2');
 
 ```
-## BAD_REQUEST 400
+### BAD_REQUEST 400
 ```js
 const { StatusCodes: { BAD_REQUEST } } = require('error-handler-e2');
 ```
-## UNAUTHENTICATED 401
+### UNAUTHENTICATED 401
 ```js
 const { StatusCodes: { UNAUTHENTICATED } } = require('error-handler-e2');
 ```
-## UNAUTHORIZED 403
+### UNAUTHORIZED 403
 ```js
 const { StatusCodes: { UNAUTHORIZED } } = require('error-handler-e2');
 ```
-## NOT_FOUND 404
+### NOT_FOUND 404
 ```js
 const { StatusCodes: { NOT_FOUND } } = require('error-handler-e2');
 ```
-## CONFLICT 409
+### CONFLICT 409
 ```js
 const { StatusCodes: { CONFLICT } } = require('error-handler-e2');
 ```
-## UNPROCURABLE_ENTITY 422
+### UNPROCURABLE_ENTITY 422
 ```js
 const { StatusCodes: { UNPROCURABLE_ENTITY } } = require('error-handler-e2');
 ```
-## INTERNAL_SERVER_ERROR 500
+### INTERNAL_SERVER_ERROR 500
 ```js
 const { StatusCodes: { INTERNAL_SERVER_ERROR } } = require('error-handler-e2');
 ```

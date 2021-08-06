@@ -1,3 +1,9 @@
+#### 3.0.3 (2021-08-06)
+
+##### Documentation Changes
+
+*  update docs ([e85b9e0e](https://github.com/miladezzat/error-handler-e2/commit/e85b9e0e872c575ed75556d272109aa95cf2562d))
+
 #### 3.0.2 (2021-07-29)
 
 ##### Chores
