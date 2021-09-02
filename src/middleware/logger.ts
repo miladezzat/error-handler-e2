@@ -20,6 +20,7 @@ class Middleware {
      const message = `[${formattedDate}] ${method}:${url} ${status}`;
 
      // LOG Message
+     // eslint-disable-next-line no-console
      console.log(message);
 
      next();
