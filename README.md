@@ -144,3 +144,16 @@ const { StatusCodes: { UNPROCURABLE_ENTITY } } = require('error-handler-e2');
 ```js
 const { StatusCodes: { INTERNAL_SERVER_ERROR } } = require('error-handler-e2');
 ```
+
+3. Middleware
+   * [loggerMiddleware](#loggerMiddleware)
+
+### loggerMiddleware
+
+```js
+
+const { Middleware:{ loggerMiddleware }} = require('error-handler-e2');
+
+app.use(loggerMiddleware);
+
+```
