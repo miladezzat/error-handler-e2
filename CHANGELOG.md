@@ -1,3 +1,13 @@
+#### 3.1.1 (2021-09-02)
+
+##### Chores
+
+*  update deps ([79d8ab3c](https://github.com/miladezzat/error-handler-e2/commit/79d8ab3cadb9f660eb8ccee40ede6d5787da172a))
+
+##### Bug Fixes
+
+*  solve lint ([1be85086](https://github.com/miladezzat/error-handler-e2/commit/1be8508646cc0f52879ae1d13a753e86cbfd136a))
+
 ### 3.1.0 (2021-09-02)
 
 ##### Chores
