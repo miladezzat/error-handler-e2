@@ -1,3 +1,18 @@
+### 3.1.0 (2021-09-02)
+
+##### Chores
+
+*  update deps ([79d8ab3c](https://github.com/miladezzat/error-handler-e2/commit/79d8ab3cadb9f660eb8ccee40ede6d5787da172a))
+
+##### Documentation Changes
+
+*  update docs ([f8c476ea](https://github.com/miladezzat/error-handler-e2/commit/f8c476eab34efeb0f20d5af2dda801e2fb4e309b))
+
+##### New Features
+
+*  update new feature ([0328df0a](https://github.com/miladezzat/error-handler-e2/commit/0328df0abff3dc8bd7c147062915dbe7c5530692))
+*  add new status codes ([6adabccc](https://github.com/miladezzat/error-handler-e2/commit/6adabccc12d5c0aac82b41ee8f13d7ce9a5bb550))
+
 #### 3.0.3 (2021-08-06)
 
 ##### Documentation Changes
