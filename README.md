@@ -147,6 +147,8 @@ const { StatusCodes: { INTERNAL_SERVER_ERROR } } = require('error-handler-e2');
 
 3. Middleware
    * [loggerMiddleware](#loggerMiddleware)
+   * [handleErrorMiddleware](#handleErrorMiddleware)
+   * [notFoundMiddleware](#notFoundMiddleware)
 
 ### loggerMiddleware
 
@@ -155,5 +157,25 @@ const { StatusCodes: { INTERNAL_SERVER_ERROR } } = require('error-handler-e2');
 const { Middleware:{ loggerMiddleware }} = require('error-handler-e2');
 
 app.use(loggerMiddleware);
+
+```
+
+### handleErrorMiddleware
+
+```js
+
+const { Middleware:{ handleErrorMiddleware }} = require('error-handler-e2');
+
+app.use(handleErrorMiddleware);
+
+```
+
+### handleErrorMiddleware
+
+```js
+
+const { Middleware:{ notFoundMiddleware }} = require('error-handler-e2');
+
+app.use(notFoundMiddleware);
 
 ```

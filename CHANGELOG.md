@@ -1,3 +1,17 @@
+## 4.0.0 (2021-09-12)
+
+##### Documentation Changes
+
+*  update docs ([149b99ff](https://github.com/miladezzat/error-handler-e2/commit/149b99ff687568996f7edec19d5bdc6d6319eb15))
+
+##### New Features
+
+*  add new features ([bb858f92](https://github.com/miladezzat/error-handler-e2/commit/bb858f920a7f618d78709c33bfb1a5d7b06dd5ba))
+
+##### Bug Fixes
+
+*  solve confilkcts ([62199498](https://github.com/miladezzat/error-handler-e2/commit/6219949815b568a4dbb522f906b0f2a4c8a85045))
+
 #### 3.1.1 (2021-09-02)
 
 ##### Chores
