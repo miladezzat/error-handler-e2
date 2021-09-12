@@ -1,6 +1,8 @@
+/* eslint-disable import/prefer-default-export */
 import logger from './logger';
+import handleError from './handle-error';
+import notFound from './not-found';
 
-export {
-  // eslint-disable-next-line import/prefer-default-export
-  logger,
-};
+export const loggerMiddleware = logger;
+export const handleErrorMiddleware = handleError;
+export const notFoundMiddleware = notFound;
