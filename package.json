@@ -13,7 +13,7 @@
     "test": "./node_modules/.bin/mocha -r ts-node/register test/**/*.spec.ts",
     "depcheck": "./node_modules/.bin/npm-check -u",
     "build": "rollup -c",
-    "git-cz": "./node_modules/.bin/git-cz",
+    "commit": "./node_modules/.bin/git-cz",
     "husky": "husky init",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
@@ -28,8 +28,10 @@
     "errors",
     "error",
     "error handler",
-    "express js",
-    "node js"
+    "expressjs",
+    "nodejs",
+    "nodejs errors",
+    "http status codes"
   ],
   "author": "Milad E. Fahmy <miladezzat> (https://github.com/miladezzat)",
   "contributors": [

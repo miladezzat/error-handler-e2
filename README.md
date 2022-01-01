@@ -4,7 +4,9 @@
 [![Build Status](https://travis-ci.org/miladezzat/error-handler-e2.svg?branch=master)](https://travis-ci.org/miladezzat/error-handler-e2)
 [![npm version](https://badge.fury.io/js/error-handler-e2.svg)](https://badge.fury.io/js/error-handler-e2)&nbsp;
 
-This is handle error package
+This is a common page for:
+- Error handler
+- Http Status codes
 
 1. [Installation](#installation)
 2. [Usage](#usage)
