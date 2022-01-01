@@ -1,6 +1,6 @@
 {
   "name": "error-handler-e2",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "This is handle error package",
   "main": "./build/index.js",
   "module": "./build/index.js",
@@ -13,7 +13,7 @@
     "test": "./node_modules/.bin/mocha -r ts-node/register test/**/*.spec.ts",
     "depcheck": "./node_modules/.bin/npm-check -u",
     "build": "rollup -c",
-    "git-cz": "./node_modules/.bin/git-cz",
+    "commit": "./node_modules/.bin/git-cz",
     "husky": "husky init",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
@@ -28,8 +28,10 @@
     "errors",
     "error",
     "error handler",
-    "express js",
-    "node js"
+    "expressjs",
+    "nodejs",
+    "nodejs errors",
+    "http status codes"
   ],
   "author": "Milad E. Fahmy <miladezzat> (https://github.com/miladezzat)",
   "contributors": [
@@ -37,25 +39,25 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@rollup/plugin-typescript": "^8.2.5",
-    "@types/chai": "^4.2.15",
+    "@rollup/plugin-typescript": "^8.3.0",
+    "@types/chai": "^4.3.0",
     "@types/mocha": "^9.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.29.0",
-    "@typescript-eslint/parser": "^4.29.0",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
     "chai": "^4.3.0",
     "commitizen": "^4.2.3",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint": "^8.6.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3",
     "generate-changelog": "^1.8.0",
-    "husky": "^7.0.1",
-    "mocha": "^9.0.3",
+    "husky": "^7.0.4",
+    "mocha": "^9.1.3",
     "npm-check": "^5.9.2",
     "pinst": "^2.1.6",
-    "rollup": "^2.56.0",
-    "ts-node": "^10.1.0",
-    "typescript": "^4.1.5"
+    "rollup": "^2.62.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
   },
   "husky": {
     "hooks": {
@@ -71,7 +73,6 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/miladezzat/error-handler-e2.git"

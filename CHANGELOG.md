@@ -1,3 +1,14 @@
+#### 4.0.1 (2022-01-01)
+
+##### Chores
+
+*  update deps ([1847cc88](https://github.com/miladezzat/error-handler-e2/commit/1847cc88f1e1c9d7928fa8ed318156eab407147a))
+*  update deps ([29d2d0f6](https://github.com/miladezzat/error-handler-e2/commit/29d2d0f6f5c7bd0e07202d43f38c72248ba3933b))
+
+##### Documentation Changes
+
+*  update docs ([da76bdaa](https://github.com/miladezzat/error-handler-e2/commit/da76bdaa3fa8ab4ad054ffac49b8614af9f7ba87))
+
 ## 4.0.0 (2021-09-12)
 
 ##### Documentation Changes
