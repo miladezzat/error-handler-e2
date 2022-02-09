@@ -2,6 +2,27 @@
 
 ##### Documentation Changes
 
+*  add CONTRIBUTING file ([ddeb2a0b](https://github.com/miladezzat/error-handler-e2/commit/ddeb2a0be5c7e493a9d04d54fecbf143a1471111))
+*  update the docs ([33207639](https://github.com/miladezzat/error-handler-e2/commit/33207639086eff239b28229fe727d8bd0310ad60))
+*  update readme ([b6a0b07e](https://github.com/miladezzat/error-handler-e2/commit/b6a0b07e4c8a276925d2e35e8a5d3f4025243b44))
+*  update sidebare ([14451653](https://github.com/miladezzat/error-handler-e2/commit/1445165348e364b586fceeba936f24afd8d02ba6))
+* **docs:**
+  *  add options ([6a72ddec](https://github.com/miladezzat/error-handler-e2/commit/6a72ddecc2535eeccf532ade55622e80671a00d2))
+  *  add get start ([98325150](https://github.com/miladezzat/error-handler-e2/commit/98325150d19dee030d6d3c0c7c7ac87dacd7ae35))
+* **set up docs:**  use docify package to setup docs ([fcbb2eb9](https://github.com/miladezzat/error-handler-e2/commit/fcbb2eb98511f28421f621df1f0a468ba8a5280f))
+
+##### New Features
+
+*  set headers ([5929788a](https://github.com/miladezzat/error-handler-e2/commit/5929788abfa7a359403a30fc678f0c2df020a1e6))
+
+##### Bug Fixes
+
+*  update index ([3e280f40](https://github.com/miladezzat/error-handler-e2/commit/3e280f40ce84c776ea97e4b4695e068872639312))
+
+#### 4.1.1 (2022-02-09)
+
+##### Documentation Changes
+
 *  update readme ([b6a0b07e](https://github.com/miladezzat/error-handler-e2/commit/b6a0b07e4c8a276925d2e35e8a5d3f4025243b44))
 *  update sidebare ([14451653](https://github.com/miladezzat/error-handler-e2/commit/1445165348e364b586fceeba936f24afd8d02ba6))
 * **docs:**
