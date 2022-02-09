@@ -12,7 +12,7 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha -r ts-node/register test/**/*.spec.ts",
     "depcheck": "./node_modules/.bin/npm-check -u",
-    "build": "rollup -c",
+    "build": "rollup -c && cp CHANGELOG.md ./docs/CHANGELOG.md && cp CONTRIBUTING.md ./docs/CONTRIBUTING.md",
     "commit": "./node_modules/.bin/git-cz",
     "docs:init": "docsify init ./docs",
     "docs:serve": "docsify serve docs",
@@ -85,5 +85,5 @@
   "bugs": {
     "url": "https://github.com/miladezzat/error-handler-e2/issues"
   },
-  "homepage": "https://miladezzat.github.io/http-status-codes/index.html"
+  "homepage": "https://miladezzat.github.io/error-handler-e2"
 }

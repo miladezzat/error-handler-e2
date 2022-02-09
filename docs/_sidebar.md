@@ -4,3 +4,4 @@
 * [Get Start](get-start.md "Get Start")
 * [Options](options.md "Package Options")
 * [Examples](examples.md "Examples")
+* [CHANGELOG](CHANGELOG.md "Changelog")
