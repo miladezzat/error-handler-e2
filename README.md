@@ -151,6 +151,7 @@ const { StatusCodes: { INTERNAL_SERVER_ERROR } } = require('error-handler-e2');
    * [loggerMiddleware](#loggerMiddleware)
    * [handleErrorMiddleware](#handleErrorMiddleware)
    * [notFoundMiddleware](#notFoundMiddleware)
+   * [asyncHandlerMiddleware](#asyncHandlerMiddleware)
 
 ### loggerMiddleware
 
@@ -180,4 +181,17 @@ const { Middleware:{ notFoundMiddleware }} = require('error-handler-e2');
 
 app.use(notFoundMiddleware);
 
+```
+
+### asyncHandlerMiddleware
+
+```js
+import { Middleware:{ asyncHandlerMiddleware }, StatusCodes } from 'error-handler-e2';
+
+// get users example
+route.get('/users', asyncHandler(async (req: Request, res: Response, next: NextFunction) => {
+
+    return res.status(StatusCodes.OK).json({ users: [{ id: 1, name: 'Milad' } ]});
+  })
+);
 ```
