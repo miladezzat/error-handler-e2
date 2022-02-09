@@ -1,6 +1,6 @@
 {
   "name": "error-handler-e2",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "This is handle error package",
   "main": "./build/index.js",
   "module": "./build/index.js",
@@ -14,7 +14,6 @@
     "depcheck": "./node_modules/.bin/npm-check -u",
     "build": "rollup -c",
     "commit": "./node_modules/.bin/git-cz",
-    "docs:init": "docsify init ./docs",
     "docs:serve": "docsify serve docs",
     "husky": "husky init",
     "postinstall": "husky install",
