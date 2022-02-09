@@ -1,3 +1,21 @@
+### 4.1.0 (2022-02-09)
+
+##### Chores
+
+*  update docs ([e4031ad1](https://github.com/miladezzat/error-handler-e2/commit/e4031ad1fcee57a9c04f33cb2b60c919d3fec507))
+
+##### Continuous Integration
+
+*  delete pre-commit and add pre-push ([a97d1abc](https://github.com/miladezzat/error-handler-e2/commit/a97d1abc6a24d7bd6e0155fdd1b5746e908564da))
+
+##### Documentation Changes
+
+*  add docs for async handler ([6db02398](https://github.com/miladezzat/error-handler-e2/commit/6db0239815fe4d250edaa0fde60c171fbf06f85f))
+
+##### New Features
+
+*  create async handler middleware ([357e5c14](https://github.com/miladezzat/error-handler-e2/commit/357e5c14c54739b8814569f328b3711cd033b8b3))
+
 #### 4.0.1 (2022-01-01)
 
 ##### Chores
