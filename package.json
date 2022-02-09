@@ -14,7 +14,6 @@
     "depcheck": "./node_modules/.bin/npm-check -u",
     "build": "rollup -c && cp CHANGELOG.md ./docs/CHANGELOG.md && cp CONTRIBUTING.md ./docs/CONTRIBUTING.md",
     "commit": "./node_modules/.bin/git-cz",
-    "docs:init": "docsify init ./docs",
     "docs:serve": "docsify serve docs",
     "husky": "husky init",
     "postinstall": "husky install",
