@@ -1,3 +1,13 @@
+#### 4.1.1 (2022-02-09)
+
+##### Documentation Changes
+
+* **set up docs:**  use docify package to setup docs ([fcbb2eb9](https://github.com/miladezzat/error-handler-e2/commit/fcbb2eb98511f28421f621df1f0a468ba8a5280f))
+
+##### New Features
+
+*  set headers ([5929788a](https://github.com/miladezzat/error-handler-e2/commit/5929788abfa7a359403a30fc678f0c2df020a1e6))
+
 ### 4.1.0 (2022-02-09)
 
 ##### Chores
