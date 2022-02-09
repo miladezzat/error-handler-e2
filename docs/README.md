@@ -1,8 +1,6 @@
 # Error Handler E2
 [![npm version](https://badge.fury.io/js/error-handler-e2.svg)](https://badge.fury.io/js/error-handler-e2)&nbsp;
-
 ![https://img.shields.io/npm/dm/error-handler-e2.svg](https://img.shields.io/npm/dm/error-handler-e2.svg)
-
 [![Build Status](https://travis-ci.org/miladezzat/error-handler-e2.svg?branch=master)](https://travis-ci.org/miladezzat/error-handler-e2)
 
 This is a common page for:
@@ -12,21 +10,6 @@ This is a common page for:
 1. [Installation](#installation)
 2. [Usage](#usage)
 3. [Options](#options)
-## Installation
-
-```js
-npm i error-handler-e2
-// Or 
-yarn add error-handler-e2
-```
-
-
-## Usage
-```js
-const { Errors: { BadRequestError } } = require('error-handler-e2');
-// or
-import { Errors } from 'error-handler-e2'
-```
 
 ## Options
 
