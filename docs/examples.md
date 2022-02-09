@@ -1,1 +1,7 @@
-## Examples
+# Examples
+
+## Errors
+
+## Middlewares
+
+## StatusCodes
