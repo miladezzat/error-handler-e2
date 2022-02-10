@@ -12,7 +12,7 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha -r ts-node/register test/**/*.spec.ts",
     "depcheck": "./node_modules/.bin/npm-check -u",
-    "build": "rollup -c && cp CHANGELOG.md ./docs/CHANGELOG.md && cp CONTRIBUTING.md ./docs/CONTRIBUTING.md",
+    "build": "rollup -c && cp CHANGELOG.md ./docs/CHANGELOG.md",
     "commit": "./node_modules/.bin/git-cz",
     "docs:serve": "docsify serve docs",
     "husky": "husky init",
