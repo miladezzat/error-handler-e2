@@ -1,3 +1,3 @@
 # Contributing
 
-We will set rules for it later
+Feel free to create issues for adding new features or solve bug

@@ -3,4 +3,4 @@
 ![https://img.shields.io/npm/dm/error-handler-e2.svg](https://img.shields.io/npm/dm/error-handler-e2.svg)
 [![Build Status](https://travis-ci.org/miladezzat/error-handler-e2.svg?branch=master)](https://travis-ci.org/miladezzat/error-handler-e2)
 
-This is an open source package for error handler, [official docs](https://miladezzat.github.io/error-handler-e2)
+This is an open source package for error handler, [Get Start](./get-start.md)
