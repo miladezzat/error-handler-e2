@@ -1,3 +1,21 @@
+#### 4.1.5 (2022-02-10)
+
+#### 4.1.5 (2022-02-10)
+
+#### 4.1.4 (2022-02-10)
+
+##### Chores
+
+*  update deps ([e361ad14](https://github.com/miladezzat/error-handler-e2/commit/e361ad1486695cc41df3dddeb6b238dd6132d77a))
+
+##### New Features
+
+*  add domain ([c1c4a8ce](https://github.com/miladezzat/error-handler-e2/commit/c1c4a8ce078e46b39733e690b07c5a98f206394e))
+
+##### Bug Fixes
+
+*  add contrubuite ([1a005223](https://github.com/miladezzat/error-handler-e2/commit/1a005223c726e3a08789d7f6f84399cef3d23c21))
+
 #### 4.1.3 (2022-02-09)
 
 #### 4.1.2 (2022-02-09)
