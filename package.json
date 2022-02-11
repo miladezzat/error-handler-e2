@@ -1,6 +1,6 @@
 {
   "name": "error-handler-e2",
-  "version": "4.1.5",
+  "version": "4.1.6",
   "description": "This is handle error package",
   "main": "./build/index.js",
   "module": "./build/index.js",
@@ -12,7 +12,7 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha -r ts-node/register test/**/*.spec.ts",
     "depcheck": "./node_modules/.bin/npm-check -u",
-    "build": "rollup -c && cp CHANGELOG.md ./docs/CHANGELOG.md",
+    "build": "rollup -c",
     "commit": "./node_modules/.bin/git-cz",
     "docs:serve": "docsify serve docs",
     "husky": "husky init",

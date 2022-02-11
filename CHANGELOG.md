@@ -1,3 +1,9 @@
+#### 4.1.6 (2022-02-11)
+
+##### Documentation Changes
+
+*  update docs ([1147192d](https://github.com/miladezzat/error-handler-e2/commit/1147192db3c5104305c63ec671b3d7170a47074c))
+
 #### 4.1.5 (2022-02-10)
 
 #### 4.1.5 (2022-02-10)
